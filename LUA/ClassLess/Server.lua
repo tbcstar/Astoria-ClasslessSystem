@@ -200,7 +200,7 @@ function MyHandlers.WipeAll(player, clientSecret)
 
     price = prices[rst]
     if (player:GetCoinage() < price) then
-        player:SendNotification("Not enough money to reset.")
+        player:SendNotification("没有足够的钱来重置。")
         return 
     end
 
@@ -249,7 +249,7 @@ end
 
 
 local function PLAYER_EVENT_ON_SAVE(event, player)
-    player:SendBroadcastMessage("You're saved! :)")
+    player:SendBroadcastMessage("您已保存！")
 end
 
 -- RegisterPlayerEvent( 25, PLAYER_EVENT_ON_SAVE )

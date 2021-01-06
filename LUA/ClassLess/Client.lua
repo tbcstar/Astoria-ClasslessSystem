@@ -6,13 +6,13 @@
 
 local AIO = AIO or require("AIO")
 
--- CLIENT SECRET
+-- 客户端密钥
 local clientSecret = ""
 local handlerName = "yQ4CiWjHET"
 
 --|TInterface/ICONS/VAS_RaceChange:35:35|t
 local LastContainerNum = 1
--- Settings
+-- 设置
 local iconSize = 35	
 local leftConst = 172
 local itemsPerRow = 7
@@ -20,23 +20,23 @@ local current_class = 1
 local current_spec = 1
 local prices = {}
 
--- Ready-to-use for the system
+-- 系统可以随时使用
 
-local classes = {"Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior", "MONK", "DEMONHUNTER"};
+local classes = {"Druid", "Hunter", "Mage", "Paladin", "Priest", "盗贼", "Shaman", "Warlock", "战士", "武僧", "恶魔猎手"};
 local class_list = {"DRUID", "HUNTER", "MAGE", "PALADIN", "PRIEST", "ROGUE", "SHAMAN", "WARLOCK", "WARRIOR"}
 local spell_point_list = {}
 local talent_point_list = {}
 
 
---Data
+--数据
 if AIO.IsServer() then
-    --Spells
+    --技能
     AIO.AddAddon("lua_scripts\\ClassLess\\data\\spells.data", "spells")
-    --Talents
+    --天赋
     AIO.AddAddon("lua_scripts\\ClassLess\\data\\talents.data", "talents")
     --Locks
     AIO.AddAddon("lua_scripts\\ClassLess\\data\\locks.data", "locks")
-    --Requirements
+    --要求
     AIO.AddAddon("lua_scripts\\ClassLess\\data\\req.data", "req")
 end
 
